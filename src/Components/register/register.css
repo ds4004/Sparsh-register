@@ -151,23 +151,20 @@ select {
     /* border: 5px solid #65FFA3; */
     /* outline: 5px solid #86c7f9; */
     /* border-radius: 5px; */
-    outline-offset: -15px;
-    outline-width: 200px 200px;
+    outline-offset: -5vw;
+    outline-width: 20vw 20vh;
     background: linear-gradient(to right, #86c7f9 4px, transparent 4px) 0 100%,
         linear-gradient(to left, #86c7f9 4px, transparent 4px) 100% 0,
         linear-gradient(to bottom, #86c7f9 4px, transparent 4px) 100% 0,
         linear-gradient(to top, #86c7f9 4px, transparent 4px) 0 100%;
 
     background-repeat: no-repeat;
-    background-size: 200px 200px;
+    background-size: 20vh 20vw;
 }
 
 @media only screen and (max-width: 600px) {
     .flex-2 {
         flex-direction: column;
-    }
-    #part-1 {
-        width: 100vw;
     }
     .flex-2 div {
         width: 100vw;
@@ -180,20 +177,39 @@ select {
     .in {
         width: 50vw;
     }
+    #main-register {
+        height: 260vh;
+    }
+    #part-1 {
+        width: 100vw;
+        position: absolute;
+        top: 50vh;
+    }
     #part-2 {
-        /* position: relative; */
-        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 80vw;
+        margin: auto;
+    }
+    .poster{
+        padding: 1vw;
+        width: 75vw;
+        margin: auto;
+        padding: 4vw;
+        background-size: 20vw 20vh;
     }
     #imp {
         width: 70vw;
     }
-
     .button {
         width: 80vw;
         pad: -10px;
     }
-
     .button input {
         width: 40vw;
+    }
+    select {
+        width: 50vw;
     }
 }
